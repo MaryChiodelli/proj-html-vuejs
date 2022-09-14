@@ -10,7 +10,12 @@
         </ul>
       </nav>
       <ul>
-        <li>F</li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-twitter" />
+          <font-awesome-icon icon="fa-brands fa-facebook-f" />
+          <font-awesome-icon icon="fa-brands fa-instagram" />
+          <font-awesome-icon icon="fa-brands fa-linkedin" />
+        </li>
       </ul>
     </div>
   </header>
