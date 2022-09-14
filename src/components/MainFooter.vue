@@ -1,15 +1,17 @@
 <template>
   <footer>
-    <div class="container row">
+    <div class="container footer-meta">
       <div class="col">
         <h4>Address</h4>
-        <div>text</div>
-        <div>text</div>
-        <div>text</div>
+        <ul>
+          <li>382 NE 191st St # 87394 Miami, FL 33279-3899</li>
+          <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
+          <li><a href="#">support@Maxcoach.com</a></li>
+        </ul>
         
         <ul class="social-list">
           <li>
-            <font-awesome-icon icon="fa-brands fa-square-facebook" />
+            <font-awesome-icon icon="fa-brands fa-square-facebook" class="social-icon" />
           </li>
           <li>
             <font-awesome-icon icon="fa-brands fa-twitter" class="social-icon" />
@@ -25,12 +27,12 @@
 
       <div class="col nav-links">
         <FooterLinks title="Explore" :links="links1" />
-        <FooterLinks :links="links2" />
+        <FooterLinks :links="links2" class="pt" />
         <FooterLinks title="Information" :links="links3" />
       </div>
 
     </div>
-    <div class="container privacy">
+    <div class="container footer-privacy">
       <p>&copy; 2020 Maxcoach, All Rights Reserved</p>
     </div>
   </footer>
@@ -104,7 +106,29 @@ export default {
 <style lang="scss" scoped>
   footer {
     background-color: #171520;
-    color: #fff;
+    color: #8B8B90;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .footer-meta {
+    display: flex;
+    padding-top: 65px;
+
+    h4 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 9px;
+    }
+
+    li {
+      line-height: 250%;
+    }
+  }
+
+  .footer-privacy {
+    padding: 80px 0 56px;
+    text-align: center;
   }
 
   .nav-links {
@@ -116,7 +140,21 @@ export default {
     width: 50%;
   }
 
-  .privacy {
-    text-align: center;
+
+  .social-list {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .social-icon {
+    display: block;
+    height: 24px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .pt {
+    padding-top: 35px;
   }
 </style>

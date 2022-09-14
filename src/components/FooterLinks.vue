@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>{{title}}</h4>
+    <h4 v-if="title">{{title}}</h4>
     <ul v-for="(link, index) in links" :key="index">
       <li><a href="link.href">
         {{link.text}}
@@ -20,5 +20,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  h4 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #fff;
+  }
+  a {
+    line-height: 250%;
+  }
 </style>
