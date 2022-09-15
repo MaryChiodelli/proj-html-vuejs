@@ -26,16 +26,19 @@
     </section>
 
     <StatisticsSection />
+    <AboutSection />
   </main>
 </template>
 
 <script>
 import StatisticsSection from './StatisticsSection.vue';
+import AboutSection from './AboutSection.vue';
 
 export default {
   name: 'MainContent',
   components: {
-    StatisticsSection
+    StatisticsSection,
+    AboutSection
   }
 }
 </script>
