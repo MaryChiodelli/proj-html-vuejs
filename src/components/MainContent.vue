@@ -24,12 +24,19 @@
         </div>
       </div>
     </section>
+
+    <StatisticsSection />
   </main>
 </template>
 
 <script>
+import StatisticsSection from './StatisticsSection.vue';
+
 export default {
-  name: 'MainContent'
+  name: 'MainContent',
+  components: {
+    StatisticsSection
+  }
 }
 </script>
 
