@@ -17,6 +17,7 @@ ul, ol, menu {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -32,4 +33,11 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.detail {
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
 }
