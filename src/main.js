@@ -15,9 +15,13 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faShapes } from '@fortawesome/free-solid-svg-icons'
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faSquareFacebook, faArrowRight)
+library.add(faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faSquareFacebook, faArrowRight, faShapes, faCircleInfo, faBook, faCartShopping)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

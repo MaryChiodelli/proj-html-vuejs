@@ -2,6 +2,12 @@
   <main>
     <section class="hero">
       <div class="container">
+        <ul class="tools">
+          <li class="tool-icon"><font-awesome-icon icon="fa-solid fa-shapes" size="lg" /></li>
+          <li class="tool-icon"><font-awesome-icon icon="fa-solid fa-circle-info" size="lg" /></li>
+          <li class="tool-icon"><font-awesome-icon icon="fa-solid fa-book" size="lg" /></li>
+          <li class="tool-icon mb-0"><font-awesome-icon icon="fa-solid fa-cart-shopping" size="lg" /></li>
+        </ul>
         <div class="row">
           <div class="col hero-content">
             <div class="detail">I'm wingman</div>
@@ -31,8 +37,28 @@ export default {
   .hero {
     padding-top: 80px;
     margin-top: -80px;
-    background-image: url('../assets/background-pattern-wavify.png');
+    background: url('../assets/home-movation-shape-face-600x534.png') right 20% bottom -30%  no-repeat,
+                url('../assets/background-pattern-wavify.png');
     background-color: #F7F7FD;
+
+    .tools {
+      padding: 10px;
+      border-radius: 4px 0 0 4px;
+      position: absolute;
+      top: 200px;
+      right: 0;
+      background-color: #fff;
+      box-shadow: -3px 0 10px -2px rgb(0 0 0 / 10%);
+      text-align: center;
+
+      .tool-icon {
+        margin-bottom: 18px;
+      }
+
+      .mb-0 {
+        margin-bottom: 0;
+      }
+    }
 
     .row {
       align-items: center;
