@@ -13,10 +13,7 @@
             <div class="detail">I'm wingman</div>
             <h1 class="title">Peace On Earth A Wonderful Wish But No Way</h1>
             <p class="description">Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
-            <a class="button" href="#">
-              <span class="button-label">Get Started For Free</span>
-              <font-awesome-icon icon="fa-solid fa-arrow-right" />
-            </a>
+            <ButtonComponent class="btn" label="Get started For Free" icon="true" />
           </div>
           <div class="col hero-image">
             <img src="../assets/home-movation-hero-image.png" alt="">
@@ -27,18 +24,23 @@
 
     <StatisticsSection />
     <AboutSection />
+    <CoursesSection />
   </main>
 </template>
 
 <script>
+import ButtonComponent from './ButtonComponent.vue';
 import StatisticsSection from './StatisticsSection.vue';
 import AboutSection from './AboutSection.vue';
+import CoursesSection from './CoursesSection.vue';
 
 export default {
   name: 'MainContent',
   components: {
+    ButtonComponent,
     StatisticsSection,
-    AboutSection
+    AboutSection,
+    CoursesSection
   }
 }
 </script>
@@ -98,19 +100,8 @@ export default {
         line-height: 215%;
       }
 
-      .button {
-        padding: 18px 50px;
-        border-radius: 4px;
-        margin-bottom: 1rem;
-        display: inline-block;
-        background-color: #20ac97;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 700;
-
-        .button-label {
-          margin-right: 12px;
-        }
+      .btn {
+        width: 280px;
       }
     }
 

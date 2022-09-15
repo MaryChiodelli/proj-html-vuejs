@@ -52,6 +52,10 @@ export default {
       flex-grow: 1;
     }
 
+    .hilight {
+      color: $primary-color;
+    }
+
     .title {
       width: 400px;
       font-size: 40px;
@@ -64,10 +68,6 @@ export default {
       font-size: 18px;
       line-height: 175%;
       margin-bottom: 1rem;
-
-      .hilight {
-        color: $primary-color;
-      }
     }
 
     p {
@@ -87,6 +87,19 @@ export default {
       width: 670px;
       border-radius: 0.5rem;
       overflow: hidden;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 100px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../assets/icon-youtube-play.png');
+      }
     }
 
     .media-quote{
