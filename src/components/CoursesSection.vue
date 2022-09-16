@@ -59,12 +59,19 @@ export default {
   }
 
   .courses-content {
+    .row {
+      margin: 0 -15px;
+    }
     .col {
       width: calc(100% / 3);
+      min-height: 450px;
+      padding: 0 15px;
+      margin-bottom: 30px;
     }
   }
 
   .courses-footer {
+    padding: 12px 0;
     text-align: center;
 
     .btn {
