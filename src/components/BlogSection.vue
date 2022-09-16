@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="container blog-footer">
-      <a class="link" href="#">View all posts</a>
+        <a class="link" href="#">View all posts</a>
     </div>
   </section>
 </template>
@@ -29,5 +29,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variables';
+  .blog-header {
+    padding: 150px 0 61px;
 
+    .detail {
+      margin-bottom: 18px;
+    }
+
+    .title {
+      font-family: $display-font;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 53px;
+    }
+  }
+
+  .blog-footer {
+    text-align: center;
+    padding-bottom: 144px;
+
+    .link-wrapper {
+      position: relative;
+
+    }
+    .link {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 3px solid $primary-color;
+
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+  }
 </style>
