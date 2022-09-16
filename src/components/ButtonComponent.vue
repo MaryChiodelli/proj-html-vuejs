@@ -28,6 +28,10 @@ export default {
   color: #fff;
   text-align: center;
 
+  & * {
+    vertical-align: middle;
+  }
+
   .button-label {
     display: inline-block;
     line-height: 52px;
@@ -37,6 +41,10 @@ export default {
 
   .button-icon {
     margin-left: 12px;
+  }
+
+  &:hover {
+    background-color: $brand-color;
   }
 }
 </style>

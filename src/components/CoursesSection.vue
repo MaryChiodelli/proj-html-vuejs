@@ -40,21 +40,20 @@ export default {
 @import '../style/variables.scss';
 
   .courses-header {
-    padding: 60px 0 65px;
+    padding: 60px 0 66px;
     text-align: center;
 
     .detail {
       margin-bottom: 20px;
+      color: $light-gray;
     }
 
     .title {
       font-size: 48px;
       font-family: $display-font;
       font-weight: 400;
-    }
-
-    .hilight {
-      color: $primary-color;
+      line-height: 64px;
+      color: $brand-color;
     }
   }
 
@@ -64,14 +63,13 @@ export default {
     }
     .col {
       width: calc(100% / 3);
-      min-height: 450px;
       padding: 0 15px;
       margin-bottom: 30px;
     }
   }
 
   .courses-footer {
-    padding: 12px 0;
+    padding: 7px 0 41px;
     text-align: center;
 
     .btn {
