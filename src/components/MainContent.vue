@@ -26,6 +26,7 @@
     <AboutSection />
     <CoursesSection />
     <BooksSection />
+    <SponsorsSection />
   </main>
 </template>
 
@@ -35,6 +36,7 @@ import StatisticsSection from './StatisticsSection.vue';
 import AboutSection from './AboutSection.vue';
 import CoursesSection from './CoursesSection.vue';
 import BooksSection from './BooksSection.vue';
+import SponsorsSection from './SponsorsSection.vue';
 
 export default {
   name: 'MainContent',
@@ -43,7 +45,8 @@ export default {
     StatisticsSection,
     AboutSection,
     CoursesSection,
-    BooksSection
+    BooksSection,
+    SponsorsSection
   }
 }
 </script>

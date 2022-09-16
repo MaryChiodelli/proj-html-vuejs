@@ -59,3 +59,32 @@ const books = [
 ];
 
 export {books};
+
+const sponsors = [
+  {
+    img: require('./assets/client-logo-05-primary.png'),
+    alt:'Its Alive logo'
+  },
+  {
+    img: require('./assets/client-logo-06-primary.png'),
+    alt:'Sixbase logo'
+  },
+  {
+    img: require('./assets/client-logo-07-primary.png'),
+    alt:'Nowhere Famous logo'
+  },
+  {
+    img: require('./assets/client-logo-04-primary.png'),
+    alt:'Pencil logo'
+  },
+  {
+    img: require('./assets/client-logo-03-primary.png'),
+    alt:'Brook logo'
+  },
+  {
+    img: require('./assets/client-logo-02-primary.png'),
+    alt:'tree logo'
+  }
+];
+
+export {sponsors};
