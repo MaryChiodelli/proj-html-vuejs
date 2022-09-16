@@ -1,6 +1,14 @@
 <template>
   <div class="card">
-    <img :src="info.img" :alt="info.title">
+    <div class="card-image">
+      <img :src="info.img" :alt="info.title">
+      <ul class="tools">
+        <li class="tool"><font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon" /></li>
+        <li class="tool"><font-awesome-icon icon="fa-solid fa-cart-shopping" class="icon" /></li>
+        <li class="tool"><font-awesome-icon icon="fa-regular fa-heart" class="icon" /></li>
+        <li class="tool mb-0"><font-awesome-icon icon="fa-solid fa-signal" class="icon" /></li>
+      </ul>
+    </div>
     <h3>{{ info.title }}</h3>
     <div class="price">
       $<span class="euro">{{ price.euro }}</span><span class="cents">.{{ price.cents }}</span>
@@ -32,8 +40,41 @@ export default {
   .card {
     text-align: center;
 
-    img {
+    .card-image {
       margin-bottom: 21px;
+      position: relative;
+      overflow: hidden;
+
+      .tools {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        opacity: 0;
+
+        .tool {
+          width: 40px;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          margin-bottom: 10px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          background-color: #fff;
+
+          .icon {
+            font-size: 1rem;
+            width: 1rem;
+          }
+        }
+
+        .mb-0 {
+          margin-bottom: 0;
+        }
+        
+      }
     }
 
     h3 {
@@ -51,6 +92,16 @@ export default {
 
       .cents {
         font-size: 19px;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .tools {
+        opacity: 1;
       }
     }
   }
