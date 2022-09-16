@@ -41,6 +41,21 @@ const courses = [
     lessons: 17,
     students: 50
   }
-]
+];
 
 export default courses;
+
+const books = [
+  {
+    img: require('./assets/product-book-11-400x400.jpg'),
+    title: 'Alpha man by Maxcoach',
+    price: '29.00'
+  },
+  {
+    img: require('./assets/product-book-10-400x400.jpg'),
+    title: 'Rreal man 4.0 by Maxcoach',
+    price: '39.00'
+  }
+];
+
+export {books};
