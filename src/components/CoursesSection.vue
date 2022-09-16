@@ -6,12 +6,8 @@
     </div>
     <div class="container courses-content">
       <div class="row">
-        <div class="col">
-          <div class="card">
-            <img src="" alt="photo">
-            <div>Price</div>
-            <h3>Title</h3>
-          </div>
+        <div v-for="(course, index) in courses" :key="index" class="col">
+          <CourseCard :info="course" />
         </div>
       </div>
     </div>
@@ -23,11 +19,19 @@
 
 <script>
 import ButtonComponent from './ButtonComponent.vue';
+import CourseCard from './CourseCard.vue';
+import courses from '../maxcoach';
 
 export default {
   name: 'CoursesSection',
   components: {
-    ButtonComponent
+    ButtonComponent,
+    CourseCard
+  },
+  data() {
+    return {
+      courses
+    }
   }
 }
 </script>
@@ -51,6 +55,12 @@ export default {
 
     .hilight {
       color: $primary-color;
+    }
+  }
+
+  .courses-content {
+    .col {
+      width: calc(100% / 3);
     }
   }
 
