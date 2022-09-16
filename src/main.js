@@ -25,9 +25,10 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faSignal } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faSquareFacebook, faArrowRight, faShapes, faCircleInfo, faBook, faCartShopping, faFileLines, faUser, faCheck, faMagnifyingGlass, faHeart, faSignal)
+library.add(faTwitter, faFacebookF, faInstagram, faLinkedin, faAngleDown, faSquareFacebook, faArrowRight, faShapes, faCircleInfo, faBook, faCartShopping, faFileLines, faUser, faCheck, faMagnifyingGlass, faHeart, faSignal, faCalendar)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

@@ -6,8 +6,8 @@
     </div>
     <div class="container blog-content">
       <div class="row">
-        <div v-for="n in 4" :key="n" class="col">
-          <ArticleCard />
+        <div v-for="(article, index) in articles" :key="index" class="col">
+          <ArticleCard :info="article" />
         </div>
       </div>
     </div>
@@ -19,11 +19,17 @@
 
 <script>
 import ArticleCard from './ArticleCard.vue';
+import {articles} from '../maxcoach';
 
 export default {
   name: 'BlogSection',
   components: {
     ArticleCard
+  },
+  data() {
+    return {
+      articles
+    }
   }
 }
 </script>
@@ -45,9 +51,21 @@ export default {
     }
   }
 
+  .blog-content {
+    .row {
+      margin: 0 -15px;
+    }
+
+    .col {
+      width: calc(100% / 4);
+      padding: 0 15px;
+      margin-bottom: 30px;
+    }
+  }
+
   .blog-footer {
     text-align: center;
-    padding-bottom: 144px;
+    padding-bottom: 141px;
 
     .link-wrapper {
       position: relative;
